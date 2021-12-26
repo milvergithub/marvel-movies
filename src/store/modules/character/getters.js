@@ -1,9 +1,8 @@
 // getters
 const getters = {
-  GET_CHARACTERS: (state) => state.data.characters.map((value, index) => ({
+  GET_CHARACTERS: (state) => state.data.characters.map((value) => ({
     ...value,
     cover: `${value.thumbnail.path}.${value.thumbnail.extension}`,
-    uuid: `${value.id}-${index}`,
   })),
   GET_PARAMS: (state) => state.data.params,
 };

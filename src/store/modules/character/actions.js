@@ -13,6 +13,9 @@ const actions = {
   CLEAR_CHARACTERS_ACTION({ commit }) {
     commit('CLEAR_CHARACTERS');
   },
+  EDIT_CHARACTER_ACTION({ commit }, payload = {}) {
+    commit('EDIT_CHARACTER', payload);
+  },
 };
 
 export default actions;
